@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from backend.settings import sendResponse, connectDB
+from backend.settings import sendResponse, connectDB, disconnectDB
 
 @csrf_exempt
 def check_service(request):
